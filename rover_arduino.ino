@@ -3,10 +3,11 @@
 
 void setup() {
     Serial.begin(9600);
+    Serial.println("Hello from arduino");
 }
 
 void loop() {
     if (Serial.available() > 0) {
-        Serial.println(Serial.readString());
+        Serial.println("Pong:" + Serial.readString());
     }
 }
