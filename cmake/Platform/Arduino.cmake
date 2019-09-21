@@ -477,7 +477,7 @@ function(GENERATE_ARDUINO_FIRMWARE INPUT_NAME)
     required_variables(VARS INPUT_BOARD MSG "must define for target ${INPUT_NAME}")
 
     set(ALL_LIBS)
-    set(ALL_SRCS ${INPUT_SRCS} ${INPUT_HDRS})
+    set(ALL_SRCS ${INPUT_SRCS})
     set(LIB_DEP_INCLUDES)
 
     if(NOT INPUT_MANUAL)
@@ -512,6 +512,8 @@ function(GENERATE_ARDUINO_FIRMWARE INPUT_NAME)
     endif()
 
     list(APPEND ALL_LIBS ${CORE_LIB} ${INPUT_LIBS})
+
+    set(ALL_SRCS ${INPUT_SRCS})
 
     setup_arduino_target(${INPUT_NAME} ${INPUT_BOARD} "${ALL_SRCS}" "${ALL_LIBS}" "${LIB_DEP_INCLUDES}" "" "${INPUT_MANUAL}")
 
@@ -1120,7 +1122,6 @@ endfunction()
 #
 #=============================================================================#
 function(setup_arduino_target TARGET_NAME BOARD_ID ALL_SRCS ALL_LIBS COMPILE_FLAGS LINK_FLAGS MANUAL)
-
     add_executable(${TARGET_NAME} ${ALL_SRCS})
     set_target_properties(${TARGET_NAME} PROPERTIES SUFFIX ".elf")
 

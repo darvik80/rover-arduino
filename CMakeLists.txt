@@ -7,15 +7,19 @@ set(${PROJECT_NAME}_BOARD pro)
 set(ARDUINO_CPU 16MHzatmega328)
 project(${PROJECT_NAME})
 
+include_directories(${PROJECT_SOURCE_DIR})
+file(GLOB SRC_FILES ${PROJECT_SOURCE_DIR}/*.cpp ${PROJECT_SOURCE_DIR}/utility/*.c)
+file(GLOB HDR_FILES ${PROJECT_SOURCE_DIR}/*.h)
+
 # Define additional source and header files or default arduino sketch files
-# set(${PROJECT_NAME}_SRCS)
-set(${PROJECT_NAME}_HDRS User_Setup.h)
+set(${PROJECT_NAME}_SRCS ${SRC_FILES})
+set(${PROJECT_NAME}_HDRS ${HDR_FILES})
 
 ### Additional static libraries to include in the target.
 # set(${PROJECT_NAME}_LIBS)
 
 ### Main sketch file
-set(${PROJECT_NAME}_SKETCH rover_arduino.ino)
+set(${PROJECT_NAME}_SKETCH rover_arduino.cpp)
 
 ### Add project directories into the build
 # add_subdirectory()

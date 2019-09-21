@@ -7,6 +7,8 @@
 
 #pragma pack(push, 1)
 
+#include <stdint.h>
+
 namespace protocol {
 
 #define PROTO_MAGIC 0x4452413f
@@ -32,23 +34,37 @@ namespace protocol {
 
     class Packet {
     public:
-        explicit Packet(uint16_t code) : magic(PROTO_MAGIC), code(code) {}
-        explicit Packet() = default;
+        explicit Packet(uint16_t code, uint8_t len) : magic(PROTO_MAGIC), code(code), size(len) {}
+        explicit Packet()  : magic(PROTO_MAGIC), code(0), size(0) {};
 
         uint32_t magic;
-        uint16_t code;
+        uint8_t code;
+        uint8_t size;
 
         virtual size_t pack(uint8_t* buffer, size_t bufSize) {
+            checkLimits(bufSize);
             memcpy(buffer, &magic, sizeof(uint32_t));
-            memcpy(buffer + sizeof(uint32_t), &code, sizeof(uint16_t));
+            memcpy(buffer + sizeof(uint32_t), &code, sizeof(uint8_t));
+            memcpy(buffer + sizeof(uint32_t) + sizeof(uint8_t), &size, sizeof(uint8_t));
 
             return sizeof(uint32_t) + sizeof(uint16_t);
+        }
+
+        virtual uint8_t getSize() {
+            return size + sizeof(uint32_t) + sizeof(uint16_t);
+        }
+
+    protected:
+        void checkLimits(size_t bufSize) {
+            if (bufSize < getSize()) {
+                //throw std::invalid_argument("not enough buffer size: " +  std::to_string(bufSize) + "/" + std::to_string(getSize()));
+            }
         }
     };
 
     class DigitalWrite : public Packet {
     public:
-        DigitalWrite(uint8_t pin, bool value) : Packet(ProtoDigitalWrite),  pin(pin), value(value) {}
+        DigitalWrite(uint8_t pin, bool value) : Packet(ProtoDigitalWrite, sizeof(uint16_t)),  pin(pin), value(value) {}
         DigitalWrite() : DigitalWrite(0, false) {}
         uint8_t pin;
         uint8_t value;
@@ -56,62 +72,62 @@ namespace protocol {
         size_t pack(uint8_t* buffer, size_t bufSize) override {
             size_t base = Packet::pack(buffer, bufSize);
             buffer[base++] = pin;
-            buffer[base++] = value;
+            buffer[base] = value;
 
-            return base;
+            return getSize();
         }
     };
 
     class DigitalRead : public Packet {
     public:
-        explicit DigitalRead(uint8_t pin) : Packet(ProtoDigitalRead),  pin(pin) {}
+        explicit DigitalRead(uint8_t pin) : Packet(ProtoDigitalRead, sizeof(uint8_t)),  pin(pin) {}
         DigitalRead() : DigitalRead(0) {}
         uint8_t pin;
 
         size_t pack(uint8_t* buffer, size_t bufSize) override {
             size_t base = Packet::pack(buffer, bufSize);
-            buffer[base++] = pin;
+            buffer[base] = pin;
 
-            return base;
+            return getSize();
         }
     };
 
     class AnalogWrite : public Packet {
     public:
-        AnalogWrite(uint8_t pin, int value) : Packet(ProtoAnalogWrite), pin(pin), value(value) {}
+        AnalogWrite(uint8_t pin, uint16_t value) : Packet(ProtoAnalogWrite, sizeof(uint16_t) + sizeof(uint8_t)), pin(pin), value(value) {}
         AnalogWrite() : AnalogWrite(0, 0) {}
 
         uint8_t pin;
-        int value;
+        uint16_t value;
 
         size_t pack(uint8_t* buffer, size_t bufSize) override {
             size_t base = Packet::pack(buffer, bufSize);
             buffer[base++] = pin;
-            memcpy(buffer + base, &value, sizeof(int));
+            memcpy(buffer + base, &value, sizeof(uint16_t));
 
-            return base + sizeof(int);
+            return getSize();
         }
 
     };
 
     class AnalogRead : public Packet {
     public:
-        explicit AnalogRead(uint8_t pin) : Packet(ProtoAnalogRead),  pin(pin) {}
+        explicit AnalogRead(uint8_t pin) : Packet(ProtoAnalogRead, sizeof(uint8_t)),  pin(pin) {}
         AnalogRead() : AnalogRead(0) {}
         uint8_t pin;
 
         size_t pack(uint8_t* buffer, size_t bufSize) override {
             size_t base = Packet::pack(buffer, bufSize);
-            buffer[base++] = pin;
+            buffer[base] = pin;
 
-            return base;
+            return getSize();
         }
 
     };
 
     class Mode : public Packet {
     public:
-        Mode(uint8_t pin, PinMode mode) : Packet(ProtoMode),  pin(pin), mode(mode) {}
+        Mode(uint8_t pin, PinMode mode) : Packet(ProtoMode, sizeof(uint16_t)),  pin(pin), mode(mode) {}
         Mode() : Mode(0, Input) {}
         uint8_t pin;
         uint8_t mode;
@@ -119,53 +135,50 @@ namespace protocol {
         size_t pack(uint8_t* buffer, size_t bufSize) override {
             size_t base = Packet::pack(buffer, bufSize);
             buffer[base++] = pin;
-            buffer[base++] = mode;
+            buffer[base] = mode;
 
-            return base;
+            return getSize();
+
         }
     };
 
     class Delay : public Packet {
     public:
-        explicit Delay(int delay) : Packet(ProtoDelay), delay(delay) {}
+        explicit Delay(uint16_t delay) : Packet(ProtoDelay, sizeof(uint16_t)), delay(delay) {}
         Delay() : Delay(0) {}
 
-        int delay;
+        uint16_t delay;
 
         size_t pack(uint8_t* buffer, size_t bufSize) override {
             size_t base = Packet::pack(buffer, bufSize);
 
-            memcpy(buffer + base, &delay, sizeof(int));
+            memcpy(buffer + base, &delay, sizeof(uint16_t));
 
-            return base + sizeof(int);
+            return getSize();
         }
     };
 
     class RegisterBatch : public Packet {
     public:
-        RegisterBatch(uint8_t batch, uint8_t *context, uint8_t len) : Packet(ProtoBatch), batch(batch), len(len), context(context) {}
+        RegisterBatch(uint8_t batch, uint8_t *context, uint8_t len) : Packet(ProtoBatch, len+sizeof(uint8_t)), batch(batch), context(context) {}
         RegisterBatch() : RegisterBatch(0, nullptr, 0) {}
 
         uint8_t batch;
-        uint8_t len;
         uint8_t * context;
 
         size_t pack(uint8_t* buffer, size_t bufSize) override {
             size_t base = Packet::pack(buffer, bufSize);
 
             buffer[base++] = batch;
-            buffer[base++] = len;
+            memcpy(buffer + base, context, size);
 
-
-            memcpy(buffer + base, context, len);
-
-            return base + len;
+            return getSize();
         }
     };
 
     class ExecBatch : public Packet {
     public:
-        explicit ExecBatch(uint8_t id) : Packet(ProtoExecBatch), id(id) {}
+        explicit ExecBatch(uint8_t id) : Packet(ProtoExecBatch, sizeof(uint8_t)), id(id) {}
         ExecBatch() : ExecBatch(0) {}
 
         uint8_t id;
@@ -181,20 +194,17 @@ namespace protocol {
 
     class Message : public Packet {
     public:
-        Message(uint8_t len, const char *context) : Packet(ProtoMessage), len(len), context(context) {}
-        Message() : Message(0, nullptr) {}
+        explicit Message(const char *context) : Packet(ProtoMessage, strlen(context)), context(context) {}
+        Message() : Packet(ProtoMessage, 0), context(nullptr) {}
 
-        uint8_t len;
         const char* context;
 
         size_t pack(uint8_t* buffer, size_t bufSize) override {
             size_t base = Packet::pack(buffer, bufSize);
 
-            buffer[base++] = len;
+            memcpy(buffer + base, context, size);
 
-            memcpy(buffer + base, context, len);
-
-            return base;
+            return getSize();
         }
     };
 }
