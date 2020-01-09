@@ -1,10 +1,9 @@
 // Based on the work by DFRobot
 
+#include <Arduino.h>
 #include "LiquidCrystal_I2C.h"
-#include <inttypes.h>
 #if defined(ARDUINO) && ARDUINO >= 100
 
-#include "Arduino.h"
 
 #define printIIC(args)	Wire.write(args)
 inline size_t LiquidCrystal_I2C::write(uint8_t value) {

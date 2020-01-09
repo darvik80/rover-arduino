@@ -1,43 +1,16 @@
-cmake_minimum_required(VERSION 2.8.4)
-set(CMAKE_TOOLCHAIN_FILE ${CMAKE_SOURCE_DIR}/cmake/ArduinoToolchain.cmake)
+cmake_minimum_required(VERSION 3.8.2)
 set(CMAKE_CXX_STANDARD 17)
 set(PROJECT_NAME arduino)
+project(${PROJECT_NAME} LANGUAGES C CXX ASM)
 
-set(${PROJECT_NAME}_BOARD pro)
-set(ARDUINO_CPU 16MHzatmega328)
-project(${PROJECT_NAME})
-
-include_directories(${PROJECT_SOURCE_DIR})
-file(GLOB SRC_FILES ${PROJECT_SOURCE_DIR}/*.cpp ${PROJECT_SOURCE_DIR}/utility/*.c)
+file(GLOB SRC_FILES ${PROJECT_SOURCE_DIR}/*.cpp)
 file(GLOB HDR_FILES ${PROJECT_SOURCE_DIR}/*.h)
 
-# Define additional source and header files or default arduino sketch files
-set(${PROJECT_NAME}_SRCS ${SRC_FILES})
-set(${PROJECT_NAME}_HDRS ${HDR_FILES})
+arduino_cmake_project(${PROJECT_NAME} BOARD_NAME uno)
 
-### Additional static libraries to include in the target.
-# set(${PROJECT_NAME}_LIBS)
+add_arduino_executable(${PROJECT_NAME} ${SRC_FILES})
 
-### Main sketch file
-set(${PROJECT_NAME}_SKETCH rover_arduino.cpp)
+find_arduino_library(wire Wire)
+link_arduino_library(${PROJECT_NAME} wire)
 
-### Add project directories into the build
-# add_subdirectory()
-
-### Additional settings to add non-standard or your own Arduino libraries.
-# For this example (libs will contain additional arduino libraries)
-# An Arduino library my_lib will contain files in libs/my_lib/: my_lib.h, my_lib.cpp + any other cpp files
-# link_directories(${CMAKE_CURRENT_SOURCE_DIR}/)
-
-# For nested library sources replace ${LIB_NAME} with library name for each library
-# set(_RECURSE true)
-
-#### Additional settings for programmer. From programmers.txt
-set(${PROJECT_NAME}_PROGRAMMER avrisp)
-set(${PROJECT_NAME}_PORT /dev/cu.SLAB_USBtoUART)
-# set(pro.upload.speed 9600)
-
-## Verbose build process
-# set(${PROJECT_NAME}_AFLAGS -v)
-
-generate_arduino_firmware(${PROJECT_NAME})
+set_target_upload_port(${PROJECT_NAME} "/dev/cu.usbserial-14330")
