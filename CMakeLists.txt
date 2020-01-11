@@ -3,8 +3,22 @@ set(CMAKE_CXX_STANDARD 17)
 set(PROJECT_NAME arduino)
 project(${PROJECT_NAME} LANGUAGES C CXX ASM)
 
-file(GLOB SRC_FILES ${PROJECT_SOURCE_DIR}/*.cpp)
-file(GLOB HDR_FILES ${PROJECT_SOURCE_DIR}/*.h)
+file(GLOB SRC_FILES
+        ${PROJECT_SOURCE_DIR}/*.cpp
+        ${PROJECT_SOURCE_DIR}/utils/*.cpp
+        ${PROJECT_SOURCE_DIR}/utils/stream/*.cpp
+        ${PROJECT_SOURCE_DIR}/utils/memory/*.cpp
+        ${PROJECT_SOURCE_DIR}/protocol/*.cpp
+)
+file(GLOB HDR_FILES
+        ${PROJECT_SOURCE_DIR}/*.h
+        ${PROJECT_SOURCE_DIR}/utils/*.h
+        ${PROJECT_SOURCE_DIR}/utils/stream/*.h
+        ${PROJECT_SOURCE_DIR}/utils/memory/*.h
+        ${PROJECT_SOURCE_DIR}/protocol/*.h
+)
+
+include_directories(${PROJECT_SOURCE_DIR})
 
 arduino_cmake_project(${PROJECT_NAME} BOARD_NAME uno)
 
