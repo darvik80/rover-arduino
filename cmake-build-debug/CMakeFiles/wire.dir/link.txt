@@ -1,2 +1,0 @@
-/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-gcc-ar rcs libwire.a  CMakeFiles/wire.dir/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/Wire/src/Wire.cpp.obj CMakeFiles/wire.dir/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/Wire/src/utility/twi.c.obj
-/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-gcc-ranlib libwire.a
