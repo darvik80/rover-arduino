@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8.2)
-set(CMAKE_CXX_STANDARD 17)
+#set(CMAKE_CXX_STANDARD 03)
 set(PROJECT_NAME arduino)
 project(${PROJECT_NAME} LANGUAGES C CXX ASM)
 
@@ -18,7 +18,10 @@ file(GLOB HDR_FILES
         ${PROJECT_SOURCE_DIR}/protocol/*.h
 )
 
-include_directories(${PROJECT_SOURCE_DIR})
+include_directories(${PROJECT_SOURCE_DIR} ${PROJECT_SOURCE_DIR}/etl/profiles)
+
+add_definitions(-DPROFILE_ARDUINO)
+add_definitions(-DETL_NO_STL)
 
 arduino_cmake_project(${PROJECT_NAME} BOARD_NAME uno)
 
