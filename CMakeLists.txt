@@ -21,7 +21,6 @@ file(GLOB HDR_FILES
 include_directories(${PROJECT_SOURCE_DIR} ${PROJECT_SOURCE_DIR}/etl/profiles)
 
 add_definitions(-DPROFILE_ARDUINO)
-add_definitions(-DETL_NO_STL)
 
 arduino_cmake_project(${PROJECT_NAME} BOARD_NAME uno)
 

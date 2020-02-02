@@ -1,0 +1,6 @@
+/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/CMakeFiles/arduino_flash.dir
+/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/CMakeFiles/wire.dir
+/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/CMakeFiles/arduino.dir
+/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/CMakeFiles/uno_Core_Lib.dir

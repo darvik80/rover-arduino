@@ -4,9 +4,6 @@
 //#include "LiquidCrystal_I2C.h"
 #include "ArduinoJson.h"
 
-#undef min
-#undef max
-
 #include "etl/crc16.h"
 
 //LiquidCrystal_I2C lcd(0x20,16,2);

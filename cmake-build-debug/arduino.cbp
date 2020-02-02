@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="arduino"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake\;CMake Files\cmake\Platform\;CMake Files\cmake\Platform\Other\;CMake Files\cmake\Platform\Utilities\;CMake Files\cmake\Platform\Properties\;CMake Files\cmake\Platform\Hardware\;CMake Files\cmake\Platform\Hardware\Boards\;CMake Files\cmake\Platform\Sources\;CMake Files\cmake\Platform\Sketches\;CMake Files\cmake\Platform\System\;CMake Files\cmake\Platform\Libraries\;CMake Files\cmake\Platform\Targets\;CMake Files\cmake\Platform\Project\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="arduino_flash">
+				<Option working_dir="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 arduino_flash"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wire">
+				<Option output="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/libwire.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DARDUINO_ARCH_AVR"/>
+					<Add option="-DPROFILE_ARDUINO"/>
+					<Add directory="/Users/darvik/Projects/cpp/rover/lib/arduino"/>
+					<Add directory="/Users/darvik/Projects/cpp/rover/lib/arduino/etl/profiles"/>
+					<Add directory="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/Wire/src"/>
+					<Add directory="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/Wire/src/utility"/>
+					<Add directory="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino"/>
+					<Add directory="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/variants/standard"/>
+					<Add directory="/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 wire"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wire/fast">
+				<Option output="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/libwire.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DARDUINO_ARCH_AVR"/>
+					<Add option="-DPROFILE_ARDUINO"/>
+					<Add directory="/Users/darvik/Projects/cpp/rover/lib/arduino"/>
+					<Add directory="/Users/darvik/Projects/cpp/rover/lib/arduino/etl/profiles"/>
+					<Add directory="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/Wire/src"/>
+					<Add directory="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/Wire/src/utility"/>
+					<Add directory="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino"/>
+					<Add directory="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/variants/standard"/>
+					<Add directory="/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 wire/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="arduino">
+				<Option output="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/arduino.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DPROFILE_ARDUINO"/>
+					<Add option="-DARDUINO_ARCH_AVR"/>
+					<Add directory="/Users/darvik/Projects/cpp/rover/lib/arduino"/>
+					<Add directory="/Users/darvik/Projects/cpp/rover/lib/arduino/etl/profiles"/>
+					<Add directory="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino"/>
+					<Add directory="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/variants/standard"/>
+					<Add directory="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/Wire/src"/>
+					<Add directory="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/Wire/src/utility"/>
+					<Add directory="/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 arduino"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="arduino/fast">
+				<Option output="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/arduino.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DPROFILE_ARDUINO"/>
+					<Add option="-DARDUINO_ARCH_AVR"/>
+					<Add directory="/Users/darvik/Projects/cpp/rover/lib/arduino"/>
+					<Add directory="/Users/darvik/Projects/cpp/rover/lib/arduino/etl/profiles"/>
+					<Add directory="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino"/>
+					<Add directory="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/variants/standard"/>
+					<Add directory="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/Wire/src"/>
+					<Add directory="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/Wire/src/utility"/>
+					<Add directory="/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 arduino/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="uno_Core_Lib">
+				<Option output="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/libuno_Core_Lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DPROFILE_ARDUINO"/>
+					<Add directory="/Users/darvik/Projects/cpp/rover/lib/arduino"/>
+					<Add directory="/Users/darvik/Projects/cpp/rover/lib/arduino/etl/profiles"/>
+					<Add directory="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino"/>
+					<Add directory="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/variants/standard"/>
+					<Add directory="/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 uno_Core_Lib"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="uno_Core_Lib/fast">
+				<Option output="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/libuno_Core_Lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DPROFILE_ARDUINO"/>
+					<Add directory="/Users/darvik/Projects/cpp/rover/lib/arduino"/>
+					<Add directory="/Users/darvik/Projects/cpp/rover/lib/arduino/etl/profiles"/>
+					<Add directory="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino"/>
+					<Add directory="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/variants/standard"/>
+					<Add directory="/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 uno_Core_Lib/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/CDC.cpp">
+			<Option target="uno_Core_Lib"/>
+		</Unit>
+		<Unit filename="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/HardwareSerial.cpp">
+			<Option target="uno_Core_Lib"/>
+		</Unit>
+		<Unit filename="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/HardwareSerial.h">
+			<Option target="uno_Core_Lib"/>
+		</Unit>
+		<Unit filename="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/HardwareSerial0.cpp">
+			<Option target="uno_Core_Lib"/>
+		</Unit>
+		<Unit filename="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/HardwareSerial1.cpp">
+			<Option target="uno_Core_Lib"/>
+		</Unit>
+		<Unit filename="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/HardwareSerial2.cpp">
+			<Option target="uno_Core_Lib"/>
+		</Unit>
+		<Unit filename="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/HardwareSerial3.cpp">
+			<Option target="uno_Core_Lib"/>
+		</Unit>
+		<Unit filename="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/IPAddress.cpp">
+			<Option target="uno_Core_Lib"/>
+		</Unit>
+		<Unit filename="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/IPAddress.h">
+			<Option target="uno_Core_Lib"/>
+		</Unit>
+		<Unit filename="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/PluggableUSB.cpp">
+			<Option target="uno_Core_Lib"/>
+		</Unit>
+		<Unit filename="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/PluggableUSB.h">
+			<Option target="uno_Core_Lib"/>
+		</Unit>
+		<Unit filename="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Print.cpp">
+			<Option target="uno_Core_Lib"/>
+		</Unit>
+		<Unit filename="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Print.h">
+			<Option target="uno_Core_Lib"/>
+		</Unit>
+		<Unit filename="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Stream.cpp">
+			<Option target="uno_Core_Lib"/>
+		</Unit>
+		<Unit filename="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Stream.h">
+			<Option target="uno_Core_Lib"/>
+		</Unit>
+		<Unit filename="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Tone.cpp">
+			<Option target="uno_Core_Lib"/>
+		</Unit>
+		<Unit filename="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/USBCore.cpp">
+			<Option target="uno_Core_Lib"/>
+		</Unit>
+		<Unit filename="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/USBCore.h">
+			<Option target="uno_Core_Lib"/>
+		</Unit>
+		<Unit filename="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/WInterrupts.c">
+			<Option target="uno_Core_Lib"/>
+		</Unit>
+		<Unit filename="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/WMath.cpp">
+			<Option target="uno_Core_Lib"/>
+		</Unit>
+		<Unit filename="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/WString.cpp">
+			<Option target="uno_Core_Lib"/>
+		</Unit>
+		<Unit filename="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/WString.h">
+			<Option target="uno_Core_Lib"/>
+		</Unit>
+		<Unit filename="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/abi.cpp">
+			<Option target="uno_Core_Lib"/>
+		</Unit>
+		<Unit filename="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/hooks.c">
+			<Option target="uno_Core_Lib"/>
+		</Unit>
+		<Unit filename="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/main.cpp">
+			<Option target="uno_Core_Lib"/>
+		</Unit>
+		<Unit filename="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/new.cpp">
+			<Option target="uno_Core_Lib"/>
+		</Unit>
+		<Unit filename="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/new.h">
+			<Option target="uno_Core_Lib"/>
+		</Unit>
+		<Unit filename="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/wiring.c">
+			<Option target="uno_Core_Lib"/>
+		</Unit>
+		<Unit filename="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/wiring_analog.c">
+			<Option target="uno_Core_Lib"/>
+		</Unit>
+		<Unit filename="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/wiring_digital.c">
+			<Option target="uno_Core_Lib"/>
+		</Unit>
+		<Unit filename="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/wiring_pulse.S">
+			<Option target="uno_Core_Lib"/>
+		</Unit>
+		<Unit filename="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/wiring_pulse.c">
+			<Option target="uno_Core_Lib"/>
+		</Unit>
+		<Unit filename="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/wiring_shift.c">
+			<Option target="uno_Core_Lib"/>
+		</Unit>
+		<Unit filename="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/Wire/src/Wire.cpp">
+			<Option target="wire"/>
+		</Unit>
+		<Unit filename="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/Wire/src/Wire.h">
+			<Option target="wire"/>
+		</Unit>
+		<Unit filename="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/Wire/src/utility/twi.c">
+			<Option target="wire"/>
+		</Unit>
+		<Unit filename="/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries/Wire/src/utility/twi.h">
+			<Option target="wire"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/LiquidCrystal_I2C.cpp">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/LiquidCrystal_I2C.h">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/arduino.cpp">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/utils/crc16.cpp">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/utils/crc16.h">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/utils/memory/Buffer.cpp">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/utils/memory/Buffer.h">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/utils/memory/BufferReader.cpp">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/utils/memory/BufferReader.h">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/utils/memory/BufferWriter.cpp">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/utils/memory/BufferWriter.h">
+			<Option target="arduino"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Arduino-Toolchain.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Arduino.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Other/ArchitectureSupportQuery.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Other\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Other/ArduinoSDKSeeker.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Other\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Other/RecipeParser.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Other\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Other/TargetFlagsManager.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Other\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Utilities/CMakeArgumentsUtils.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Utilities\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Utilities/LibraryUtils.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Utilities\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Utilities/ListUtils.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Utilities\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Utilities/MathUtils.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Utilities\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Utilities/PathUtils.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Utilities\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Utilities/PlatformLibraryUtils.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Utilities\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Utilities/PropertyUtils.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Utilities\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Utilities/StringUtils.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Utilities\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Utilities/Utilities.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Utilities\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Properties/BoardPropertiesReader.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Properties\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Properties/CMakeProperties.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Properties\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Properties/PropertiesReader.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Properties\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Properties/PropertyValueResolver.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Properties\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Properties/RecipePropertyValueResolver.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Properties\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Hardware/Boards/BoardManager.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Hardware\Boards\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Hardware/Boards/Boards.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Hardware\Boards\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Sources/ArduinoLibrarySourcesSeeker.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Sources\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Sources/ExampleSourcesSeeker.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Sources\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Sources/SourceSeeker.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Sources\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Sources/SourcesManager.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Sources\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Sketches/SketchHeadersManager.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Sketches\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Sketches/SketchManager.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Sketches\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Sketches/SketchSourceConverter.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Sketches\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/System/AvrToolsFinder.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\System\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/System/BuildSystemInitializer.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\System\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/System/DefaultsManager.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\System\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/System/LinuxDistDetector.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\System\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/System/PlatformElementsManager.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\System\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/System/PlatformFlagsSetter.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\System\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/System/PlatformInitializer.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\System\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/System/SketchbookFinder.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\System\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/System/VersionDetector.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\System\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Libraries/Libraries.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Libraries\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Libraries/LibrariesFinder.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Libraries\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Libraries/LibraryArchitectureParser.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Libraries\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Libraries/LibraryFlagsManager.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Libraries\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Libraries/LibrarySourcesArchitectureResolver.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Libraries\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Targets/ArduinoCMakeLibraryTarget.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Targets\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Targets/ArduinoExampleTarget.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Targets\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Targets/ArduinoLibraryTarget.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Targets\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Targets/CoreLibTarget.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Targets\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Targets/ExecutableTarget.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Targets\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Targets/PlatformLibraryTarget.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Targets\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Targets/UploadTarget.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Targets\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Project/BoardSetup.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Project\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Project/CoreLibSetup.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Project\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Project/Project.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Project\"/>
+		</Unit>
+		<Unit filename="/Users/darvik/Projects/cpp/rover/lib/arduino/cmake/Platform/Project/ProjectSetup.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\Project\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

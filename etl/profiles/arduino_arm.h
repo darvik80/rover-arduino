@@ -35,6 +35,9 @@ SOFTWARE.
 // Arduino
 //*****************************************************************************
 
+#undef min
+#undef max
+#define ETL_NO_STL
 #define ETL_TARGET_DEVICE_ARM
 #define ETL_TARGET_OS_NONE
 #define ETL_COMPILER_GCC

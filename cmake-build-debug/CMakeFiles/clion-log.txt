@@ -1,0 +1,16 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_TOOLCHAIN_FILE=cmake/Arduino-Toolchain.cmake -G "CodeBlocks - Unix Makefiles" /Users/darvik/Projects/cpp/rover/lib/arduino
+-- Arduino SDK version 1.8.11: /Applications/Arduino.app/Contents/Java
+-- Determined Platform Header: /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Arduino.h
+-- Arduino SDK version 1.8.11: /Applications/Arduino.app/Contents/Java
+-- Determined Platform Header: /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Arduino.h
+-- Arduino SDK version 1.8.11: /Applications/Arduino.app/Contents/Java
+-- Determined Platform Header: /Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Arduino.h
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_TOOLCHAIN_FILE
+
+
+-- Build files have been written to: /Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug

@@ -1,0 +1,374 @@
+The target system is: Arduino -  - 
+The host system is: Darwin - 19.2.0 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-gcc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-g++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/a.out"
+
+Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+avr-gcc (GCC) 7.3.0
+Copyright (C) 2017 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_33751/fast && /Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_33751.dir/build.make CMakeFiles/cmTC_33751.dir/build
+Building C object CMakeFiles/cmTC_33751.dir/testCCompiler.c.obj
+/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-gcc    -o CMakeFiles/cmTC_33751.dir/testCCompiler.c.obj   -c /Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_33751
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_33751.dir/link.txt --verbose=1
+/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-gcc      CMakeFiles/cmTC_33751.dir/testCCompiler.c.obj  -o cmTC_33751 
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8a7f2/fast && /Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_8a7f2.dir/build.make CMakeFiles/cmTC_8a7f2.dir/build
+Building C object CMakeFiles/cmTC_8a7f2.dir/CMakeCCompilerABI.c.obj
+/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-gcc   -v -o CMakeFiles/cmTC_8a7f2.dir/CMakeCCompilerABI.c.obj   -c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.15/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+Reading specs from /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/device-specs/specs-avr2
+COLLECT_GCC=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-gcc
+Target: avr
+Configured with: ../gcc/configure --enable-fixed-point --enable-languages=c,c++ --prefix=/Users/jenkins/jenkins/workspace/avr-gcc-staging/label/mac-mini/objdir --disable-nls --disable-libssp --disable-libada --disable-shared --with-avrlibc=yes --with-dwarf2 --disable-doc --target=avr
+Thread model: single
+gcc version 7.3.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8a7f2.dir/CMakeCCompilerABI.c.obj' '-c' '-specs=device-specs/specs-avr2'
+ /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/7.3.0/cc1 -quiet -v -iprefix /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/ /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.15/Modules/CMakeCCompilerABI.c -mn-flash=6 -mskip-bug -quiet -dumpbase CMakeCCompilerABI.c -auxbase-strip CMakeFiles/cmTC_8a7f2.dir/CMakeCCompilerABI.c.obj -version -o /var/folders/ch/y91vrbhj6mz2q5ffq68yk05c0000gn/T//cceLLf6U.s
+GNU C11 (GCC) version 7.3.0 (avr)
+	compiled by GNU C version 4.2.1 Compatible Apple LLVM 8.1.0 (clang-802.0.38), GMP version 5.0.2, MPFR version 3.1.0, MPC version 0.9, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/sys-include"
+ignoring duplicate directory "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/../../lib/gcc/avr/7.3.0/include"
+ignoring duplicate directory "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/../../lib/gcc/avr/7.3.0/include-fixed"
+ignoring nonexistent directory "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/../../lib/gcc/avr/7.3.0/../../../../avr/sys-include"
+ignoring duplicate directory "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/../../lib/gcc/avr/7.3.0/../../../../avr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/include
+ /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/include-fixed
+ /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/include
+End of search list.
+GNU C11 (GCC) version 7.3.0 (avr)
+	compiled by GNU C version 4.2.1 Compatible Apple LLVM 8.1.0 (clang-802.0.38), GMP version 5.0.2, MPFR version 3.1.0, MPC version 0.9, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: edf4eadca6bebaf38df9a1e0d63a2ac4
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8a7f2.dir/CMakeCCompilerABI.c.obj' '-c' '-specs=device-specs/specs-avr2'
+ /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/bin/as -mmcu=avr2 -o CMakeFiles/cmTC_8a7f2.dir/CMakeCCompilerABI.c.obj /var/folders/ch/y91vrbhj6mz2q5ffq68yk05c0000gn/T//cceLLf6U.s
+COMPILER_PATH=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/7.3.0/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/bin/
+LIBRARY_PATH=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8a7f2.dir/CMakeCCompilerABI.c.obj' '-c' '-specs=device-specs/specs-avr2'
+Linking C executable cmTC_8a7f2
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8a7f2.dir/link.txt --verbose=1
+/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-gcc     -v CMakeFiles/cmTC_8a7f2.dir/CMakeCCompilerABI.c.obj  -o cmTC_8a7f2 
+Using built-in specs.
+Reading specs from /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/device-specs/specs-avr2
+COLLECT_GCC=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-gcc
+COLLECT_LTO_WRAPPER=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/7.3.0/lto-wrapper
+Target: avr
+Configured with: ../gcc/configure --enable-fixed-point --enable-languages=c,c++ --prefix=/Users/jenkins/jenkins/workspace/avr-gcc-staging/label/mac-mini/objdir --disable-nls --disable-libssp --disable-libada --disable-shared --with-avrlibc=yes --with-dwarf2 --disable-doc --target=avr
+Thread model: single
+gcc version 7.3.0 (GCC) 
+COMPILER_PATH=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/7.3.0/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/bin/
+LIBRARY_PATH=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8a7f2' '-specs=device-specs/specs-avr2'
+ /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/7.3.0/collect2 -plugin /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/7.3.0/liblto_plugin.so -plugin-opt=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/7.3.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/ch/y91vrbhj6mz2q5ffq68yk05c0000gn/T//ccQ53mzn.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc -o cmTC_8a7f2 -L/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0 -L/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc -L/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib CMakeFiles/cmTC_8a7f2.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lm -lc --end-group
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8a7f2' '-specs=device-specs/specs-avr2'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/include]
+    add: [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/include-fixed]
+    add: [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/include]
+  end of search list found
+  collapse include dir [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/include] ==> [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/lib/gcc/avr/7.3.0/include]
+  collapse include dir [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/include-fixed] ==> [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/lib/gcc/avr/7.3.0/include-fixed]
+  collapse include dir [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/include] ==> [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/avr/include]
+  implicit include dirs: [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/lib/gcc/avr/7.3.0/include;/Applications/Arduino.app/Contents/Java/hardware/tools/avr/lib/gcc/avr/7.3.0/include-fixed;/Applications/Arduino.app/Contents/Java/hardware/tools/avr/avr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(avr-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_8a7f2/fast && /Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_8a7f2.dir/build.make CMakeFiles/cmTC_8a7f2.dir/build]
+  ignore line: [Building C object CMakeFiles/cmTC_8a7f2.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-gcc   -v -o CMakeFiles/cmTC_8a7f2.dir/CMakeCCompilerABI.c.obj   -c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.15/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [Reading specs from /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/device-specs/specs-avr2]
+  ignore line: [COLLECT_GCC=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-gcc]
+  ignore line: [Target: avr]
+  ignore line: [Configured with: ../gcc/configure --enable-fixed-point --enable-languages=c,c++ --prefix=/Users/jenkins/jenkins/workspace/avr-gcc-staging/label/mac-mini/objdir --disable-nls --disable-libssp --disable-libada --disable-shared --with-avrlibc=yes --with-dwarf2 --disable-doc --target=avr]
+  ignore line: [Thread model: single]
+  ignore line: [gcc version 7.3.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8a7f2.dir/CMakeCCompilerABI.c.obj' '-c' '-specs=device-specs/specs-avr2']
+  ignore line: [ /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/7.3.0/cc1 -quiet -v -iprefix /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/ /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.15/Modules/CMakeCCompilerABI.c -mn-flash=6 -mskip-bug -quiet -dumpbase CMakeCCompilerABI.c -auxbase-strip CMakeFiles/cmTC_8a7f2.dir/CMakeCCompilerABI.c.obj -version -o /var/folders/ch/y91vrbhj6mz2q5ffq68yk05c0000gn/T//cceLLf6U.s]
+  ignore line: [GNU C11 (GCC) version 7.3.0 (avr)]
+  ignore line: [	compiled by GNU C version 4.2.1 Compatible Apple LLVM 8.1.0 (clang-802.0.38), GMP version 5.0.2, MPFR version 3.1.0, MPC version 0.9, isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/sys-include"]
+  ignore line: [ignoring duplicate directory "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/../../lib/gcc/avr/7.3.0/include"]
+  ignore line: [ignoring duplicate directory "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/../../lib/gcc/avr/7.3.0/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/../../lib/gcc/avr/7.3.0/../../../../avr/sys-include"]
+  ignore line: [ignoring duplicate directory "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/../../lib/gcc/avr/7.3.0/../../../../avr/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/include]
+  ignore line: [ /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/include-fixed]
+  ignore line: [ /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C11 (GCC) version 7.3.0 (avr)]
+  ignore line: [	compiled by GNU C version 4.2.1 Compatible Apple LLVM 8.1.0 (clang-802.0.38), GMP version 5.0.2, MPFR version 3.1.0, MPC version 0.9, isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: edf4eadca6bebaf38df9a1e0d63a2ac4]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8a7f2.dir/CMakeCCompilerABI.c.obj' '-c' '-specs=device-specs/specs-avr2']
+  ignore line: [ /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/bin/as -mmcu=avr2 -o CMakeFiles/cmTC_8a7f2.dir/CMakeCCompilerABI.c.obj /var/folders/ch/y91vrbhj6mz2q5ffq68yk05c0000gn/T//cceLLf6U.s]
+  ignore line: [COMPILER_PATH=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/7.3.0/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/bin/]
+  ignore line: [LIBRARY_PATH=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8a7f2.dir/CMakeCCompilerABI.c.obj' '-c' '-specs=device-specs/specs-avr2']
+  ignore line: [Linking C executable cmTC_8a7f2]
+  ignore line: [/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8a7f2.dir/link.txt --verbose=1]
+  ignore line: [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-gcc     -v CMakeFiles/cmTC_8a7f2.dir/CMakeCCompilerABI.c.obj  -o cmTC_8a7f2 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [Reading specs from /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/device-specs/specs-avr2]
+  ignore line: [COLLECT_GCC=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/7.3.0/lto-wrapper]
+  ignore line: [Target: avr]
+  ignore line: [Configured with: ../gcc/configure --enable-fixed-point --enable-languages=c,c++ --prefix=/Users/jenkins/jenkins/workspace/avr-gcc-staging/label/mac-mini/objdir --disable-nls --disable-libssp --disable-libada --disable-shared --with-avrlibc=yes --with-dwarf2 --disable-doc --target=avr]
+  ignore line: [Thread model: single]
+  ignore line: [gcc version 7.3.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/7.3.0/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/bin/]
+  ignore line: [LIBRARY_PATH=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8a7f2' '-specs=device-specs/specs-avr2']
+  link line: [ /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/7.3.0/collect2 -plugin /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/7.3.0/liblto_plugin.so -plugin-opt=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/7.3.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/ch/y91vrbhj6mz2q5ffq68yk05c0000gn/T//ccQ53mzn.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc -o cmTC_8a7f2 -L/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0 -L/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc -L/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib CMakeFiles/cmTC_8a7f2.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lm -lc --end-group]
+    arg [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/7.3.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/7.3.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/7.3.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/var/folders/ch/y91vrbhj6mz2q5ffq68yk05c0000gn/T//ccQ53mzn.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lm] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_8a7f2] ==> ignore
+    arg [-L/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0] ==> dir [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0]
+    arg [-L/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc] ==> dir [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc]
+    arg [-L/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib] ==> dir [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib]
+    arg [CMakeFiles/cmTC_8a7f2.dir/CMakeCCompilerABI.c.obj] ==> ignore
+    arg [--start-group] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lm] ==> lib [m]
+    arg [-lc] ==> lib [c]
+    arg [--end-group] ==> ignore
+  collapse library dir [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0] ==> [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/lib/gcc/avr/7.3.0]
+  collapse library dir [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc] ==> [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/lib/gcc]
+  collapse library dir [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib] ==> [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/avr/lib]
+  implicit libs: [gcc;m;c]
+  implicit dirs: [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/lib/gcc/avr/7.3.0;/Applications/Arduino.app/Contents/Java/hardware/tools/avr/lib/gcc;/Applications/Arduino.app/Contents/Java/hardware/tools/avr/avr/lib]
+  implicit fwks: []
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2a872/fast && /Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_2a872.dir/build.make CMakeFiles/cmTC_2a872.dir/build
+Building CXX object CMakeFiles/cmTC_2a872.dir/testCXXCompiler.cxx.obj
+/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-g++     -o CMakeFiles/cmTC_2a872.dir/testCXXCompiler.cxx.obj -c /Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_2a872
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2a872.dir/link.txt --verbose=1
+/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-g++       CMakeFiles/cmTC_2a872.dir/testCXXCompiler.cxx.obj  -o cmTC_2a872 
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_81a6b/fast && /Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_81a6b.dir/build.make CMakeFiles/cmTC_81a6b.dir/build
+Building CXX object CMakeFiles/cmTC_81a6b.dir/CMakeCXXCompilerABI.cpp.obj
+/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-g++    -v -o CMakeFiles/cmTC_81a6b.dir/CMakeCXXCompilerABI.cpp.obj -c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.15/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+Reading specs from /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/device-specs/specs-avr2
+COLLECT_GCC=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-g++
+Target: avr
+Configured with: ../gcc/configure --enable-fixed-point --enable-languages=c,c++ --prefix=/Users/jenkins/jenkins/workspace/avr-gcc-staging/label/mac-mini/objdir --disable-nls --disable-libssp --disable-libada --disable-shared --with-avrlibc=yes --with-dwarf2 --disable-doc --target=avr
+Thread model: single
+gcc version 7.3.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_81a6b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-specs=device-specs/specs-avr2'
+ /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/7.3.0/cc1plus -quiet -v -iprefix /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/ /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.15/Modules/CMakeCXXCompilerABI.cpp -mn-flash=6 -mskip-bug -quiet -dumpbase CMakeCXXCompilerABI.cpp -auxbase-strip CMakeFiles/cmTC_81a6b.dir/CMakeCXXCompilerABI.cpp.obj -version -mn-flash=6 -mskip-bug -fno-rtti -fno-enforce-eh-specs -fno-exceptions -o /var/folders/ch/y91vrbhj6mz2q5ffq68yk05c0000gn/T//ccRGwPdP.s
+GNU C++14 (GCC) version 7.3.0 (avr)
+	compiled by GNU C version 4.2.1 Compatible Apple LLVM 8.1.0 (clang-802.0.38), GMP version 5.0.2, MPFR version 3.1.0, MPC version 0.9, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/include/c++/7.3.0"
+ignoring nonexistent directory "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/include/c++/7.3.0/avr"
+ignoring nonexistent directory "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/include/c++/7.3.0/backward"
+ignoring nonexistent directory "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/sys-include"
+ignoring nonexistent directory "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/../../lib/gcc/avr/7.3.0/../../../../avr/include/c++/7.3.0"
+ignoring nonexistent directory "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/../../lib/gcc/avr/7.3.0/../../../../avr/include/c++/7.3.0/avr"
+ignoring nonexistent directory "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/../../lib/gcc/avr/7.3.0/../../../../avr/include/c++/7.3.0/backward"
+ignoring duplicate directory "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/../../lib/gcc/avr/7.3.0/include"
+ignoring duplicate directory "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/../../lib/gcc/avr/7.3.0/include-fixed"
+ignoring nonexistent directory "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/../../lib/gcc/avr/7.3.0/../../../../avr/sys-include"
+ignoring duplicate directory "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/../../lib/gcc/avr/7.3.0/../../../../avr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/include
+ /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/include-fixed
+ /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/include
+End of search list.
+GNU C++14 (GCC) version 7.3.0 (avr)
+	compiled by GNU C version 4.2.1 Compatible Apple LLVM 8.1.0 (clang-802.0.38), GMP version 5.0.2, MPFR version 3.1.0, MPC version 0.9, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 6fde3ede4ae6541c86552fbb5960fc33
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_81a6b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-specs=device-specs/specs-avr2'
+ /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/bin/as -mmcu=avr2 -o CMakeFiles/cmTC_81a6b.dir/CMakeCXXCompilerABI.cpp.obj /var/folders/ch/y91vrbhj6mz2q5ffq68yk05c0000gn/T//ccRGwPdP.s
+COMPILER_PATH=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/7.3.0/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/bin/
+LIBRARY_PATH=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_81a6b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-specs=device-specs/specs-avr2'
+Linking CXX executable cmTC_81a6b
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_81a6b.dir/link.txt --verbose=1
+/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-g++      -v CMakeFiles/cmTC_81a6b.dir/CMakeCXXCompilerABI.cpp.obj  -o cmTC_81a6b 
+Using built-in specs.
+Reading specs from /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/device-specs/specs-avr2
+COLLECT_GCC=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-g++
+COLLECT_LTO_WRAPPER=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/7.3.0/lto-wrapper
+Target: avr
+Configured with: ../gcc/configure --enable-fixed-point --enable-languages=c,c++ --prefix=/Users/jenkins/jenkins/workspace/avr-gcc-staging/label/mac-mini/objdir --disable-nls --disable-libssp --disable-libada --disable-shared --with-avrlibc=yes --with-dwarf2 --disable-doc --target=avr
+Thread model: single
+gcc version 7.3.0 (GCC) 
+COMPILER_PATH=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/7.3.0/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/bin/
+LIBRARY_PATH=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_81a6b' '-specs=device-specs/specs-avr2'
+ /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/7.3.0/collect2 -plugin /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/7.3.0/liblto_plugin.so -plugin-opt=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/7.3.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/ch/y91vrbhj6mz2q5ffq68yk05c0000gn/T//ccxxyO0Z.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc -o cmTC_81a6b -L/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0 -L/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc -L/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib CMakeFiles/cmTC_81a6b.dir/CMakeCXXCompilerABI.cpp.obj -lgcc -lm --start-group -lgcc -lm -lc --end-group
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_81a6b' '-specs=device-specs/specs-avr2'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/include]
+    add: [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/include-fixed]
+    add: [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/include]
+  end of search list found
+  collapse include dir [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/include] ==> [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/lib/gcc/avr/7.3.0/include]
+  collapse include dir [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/include-fixed] ==> [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/lib/gcc/avr/7.3.0/include-fixed]
+  collapse include dir [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/include] ==> [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/avr/include]
+  implicit include dirs: [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/lib/gcc/avr/7.3.0/include;/Applications/Arduino.app/Contents/Java/hardware/tools/avr/lib/gcc/avr/7.3.0/include-fixed;/Applications/Arduino.app/Contents/Java/hardware/tools/avr/avr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(avr-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/darvik/Projects/cpp/rover/lib/arduino/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_81a6b/fast && /Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_81a6b.dir/build.make CMakeFiles/cmTC_81a6b.dir/build]
+  ignore line: [Building CXX object CMakeFiles/cmTC_81a6b.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-g++    -v -o CMakeFiles/cmTC_81a6b.dir/CMakeCXXCompilerABI.cpp.obj -c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.15/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [Reading specs from /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/device-specs/specs-avr2]
+  ignore line: [COLLECT_GCC=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-g++]
+  ignore line: [Target: avr]
+  ignore line: [Configured with: ../gcc/configure --enable-fixed-point --enable-languages=c,c++ --prefix=/Users/jenkins/jenkins/workspace/avr-gcc-staging/label/mac-mini/objdir --disable-nls --disable-libssp --disable-libada --disable-shared --with-avrlibc=yes --with-dwarf2 --disable-doc --target=avr]
+  ignore line: [Thread model: single]
+  ignore line: [gcc version 7.3.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_81a6b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-specs=device-specs/specs-avr2']
+  ignore line: [ /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/7.3.0/cc1plus -quiet -v -iprefix /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/ /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.15/Modules/CMakeCXXCompilerABI.cpp -mn-flash=6 -mskip-bug -quiet -dumpbase CMakeCXXCompilerABI.cpp -auxbase-strip CMakeFiles/cmTC_81a6b.dir/CMakeCXXCompilerABI.cpp.obj -version -mn-flash=6 -mskip-bug -fno-rtti -fno-enforce-eh-specs -fno-exceptions -o /var/folders/ch/y91vrbhj6mz2q5ffq68yk05c0000gn/T//ccRGwPdP.s]
+  ignore line: [GNU C++14 (GCC) version 7.3.0 (avr)]
+  ignore line: [	compiled by GNU C version 4.2.1 Compatible Apple LLVM 8.1.0 (clang-802.0.38), GMP version 5.0.2, MPFR version 3.1.0, MPC version 0.9, isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/include/c++/7.3.0"]
+  ignore line: [ignoring nonexistent directory "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/include/c++/7.3.0/avr"]
+  ignore line: [ignoring nonexistent directory "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/include/c++/7.3.0/backward"]
+  ignore line: [ignoring nonexistent directory "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/sys-include"]
+  ignore line: [ignoring nonexistent directory "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/../../lib/gcc/avr/7.3.0/../../../../avr/include/c++/7.3.0"]
+  ignore line: [ignoring nonexistent directory "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/../../lib/gcc/avr/7.3.0/../../../../avr/include/c++/7.3.0/avr"]
+  ignore line: [ignoring nonexistent directory "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/../../lib/gcc/avr/7.3.0/../../../../avr/include/c++/7.3.0/backward"]
+  ignore line: [ignoring duplicate directory "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/../../lib/gcc/avr/7.3.0/include"]
+  ignore line: [ignoring duplicate directory "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/../../lib/gcc/avr/7.3.0/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/../../lib/gcc/avr/7.3.0/../../../../avr/sys-include"]
+  ignore line: [ignoring duplicate directory "/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/../../lib/gcc/avr/7.3.0/../../../../avr/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/include]
+  ignore line: [ /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/include-fixed]
+  ignore line: [ /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++14 (GCC) version 7.3.0 (avr)]
+  ignore line: [	compiled by GNU C version 4.2.1 Compatible Apple LLVM 8.1.0 (clang-802.0.38), GMP version 5.0.2, MPFR version 3.1.0, MPC version 0.9, isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 6fde3ede4ae6541c86552fbb5960fc33]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_81a6b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-specs=device-specs/specs-avr2']
+  ignore line: [ /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/bin/as -mmcu=avr2 -o CMakeFiles/cmTC_81a6b.dir/CMakeCXXCompilerABI.cpp.obj /var/folders/ch/y91vrbhj6mz2q5ffq68yk05c0000gn/T//ccRGwPdP.s]
+  ignore line: [COMPILER_PATH=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/7.3.0/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/bin/]
+  ignore line: [LIBRARY_PATH=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_81a6b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-specs=device-specs/specs-avr2']
+  ignore line: [Linking CXX executable cmTC_81a6b]
+  ignore line: [/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_81a6b.dir/link.txt --verbose=1]
+  ignore line: [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-g++      -v CMakeFiles/cmTC_81a6b.dir/CMakeCXXCompilerABI.cpp.obj  -o cmTC_81a6b ]
+  ignore line: [Using built-in specs.]
+  ignore line: [Reading specs from /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/device-specs/specs-avr2]
+  ignore line: [COLLECT_GCC=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avr-g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/7.3.0/lto-wrapper]
+  ignore line: [Target: avr]
+  ignore line: [Configured with: ../gcc/configure --enable-fixed-point --enable-languages=c,c++ --prefix=/Users/jenkins/jenkins/workspace/avr-gcc-staging/label/mac-mini/objdir --disable-nls --disable-libssp --disable-libada --disable-shared --with-avrlibc=yes --with-dwarf2 --disable-doc --target=avr]
+  ignore line: [Thread model: single]
+  ignore line: [gcc version 7.3.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/7.3.0/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/bin/]
+  ignore line: [LIBRARY_PATH=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_81a6b' '-specs=device-specs/specs-avr2']
+  link line: [ /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/7.3.0/collect2 -plugin /Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/7.3.0/liblto_plugin.so -plugin-opt=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/7.3.0/lto-wrapper -plugin-opt=-fresolution=/var/folders/ch/y91vrbhj6mz2q5ffq68yk05c0000gn/T//ccxxyO0Z.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc -o cmTC_81a6b -L/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0 -L/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc -L/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib CMakeFiles/cmTC_81a6b.dir/CMakeCXXCompilerABI.cpp.obj -lgcc -lm --start-group -lgcc -lm -lc --end-group]
+    arg [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/7.3.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/7.3.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../libexec/gcc/avr/7.3.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/var/folders/ch/y91vrbhj6mz2q5ffq68yk05c0000gn/T//ccxxyO0Z.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lm] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_81a6b] ==> ignore
+    arg [-L/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0] ==> dir [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0]
+    arg [-L/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc] ==> dir [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc]
+    arg [-L/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib] ==> dir [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib]
+    arg [CMakeFiles/cmTC_81a6b.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lm] ==> lib [m]
+    arg [--start-group] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lm] ==> lib [m]
+    arg [-lc] ==> lib [c]
+    arg [--end-group] ==> ignore
+  collapse library dir [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0] ==> [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/lib/gcc/avr/7.3.0]
+  collapse library dir [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc] ==> [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/lib/gcc]
+  collapse library dir [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib] ==> [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/avr/lib]
+  implicit libs: [gcc;m;gcc;m;c]
+  implicit dirs: [/Applications/Arduino.app/Contents/Java/hardware/tools/avr/lib/gcc/avr/7.3.0;/Applications/Arduino.app/Contents/Java/hardware/tools/avr/lib/gcc;/Applications/Arduino.app/Contents/Java/hardware/tools/avr/avr/lib]
+  implicit fwks: []
+
+
